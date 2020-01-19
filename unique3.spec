@@ -1,6 +1,6 @@
 Name:           unique3
 Version:        3.0.2
-Release:        6%{?dist}
+Release:        8%{?dist}
 Summary:        Single instance support for applications
 
 Group:          System Environment/Libraries
@@ -75,6 +75,12 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
 %doc %{_datadir}/gtk-doc
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.0.2-8
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.0.2-7
+- Mass rebuild 2013-12-27
+
 * Tue May 07 2013 Richard Hughes <rhughes@redhat.com> - 3.0.2-6
 - Split out a noarch -docs subpackage for multilib.
 
