@@ -1,0 +1,73 @@
+Changes for Uniqye 3.0.2
+========================
+• Remove the deprecated G_CONST_RETURN
+
+Changes for Unique 3.0.0
+========================
+• Set default DBus timeout to 3 seconds [Bill Nottingham]
+• Fix introspection annotations [Luciana Fujii Pontello]
+• Use GTK_CHECK_BACKEND to enable X11-specific API usage
+• Fix signedness of the lenght parameter of UniqueMessageData.set()
+• Bail out of UniqueMessageData.get_text_plain() if the message is empty
+• Fix the help string of the --enable-maintainer-flags configure switch
+• Update the documentation
+• Use the gobject-introspection Makefile template to generate
+  introspection files
+• Correctly version the API reference, to avoid collisions with the
+  gtk2.x series
+
+Changes for Unique 2.91.4
+=========================
+• Build introspection against GTK+ 3.0 [Frédéric Péters]
+
+Changes for Unique 2.90.1
+=========================
+• Link against GTK+ 3.0 [Bastien Nocera]
+• Use GDBus by default [Christian Persch]
+
+Changes for Unique 1.1.6
+========================
+• Fix linker flags [Emilio Pozuelo Monfort]
+
+Changes for Unique 1.1.4
+========================
+• Fix last usage of GDK X11 API without guards [Anders F. Bjorklund]
+• Fix UNIQUE_CHECK_VERSION macro [Emmanuel Rodriguez]
+• Documentation fixes
+• Update the build environment
+• Fix introspection annotation for unique_message_data_[sg]et_uris()
+• Allow building only the D-Bus backend [Tor Lillqvist]
+
+Changes for Unique 1.1.2
+========================
+* Follow GTK+'s single header include policy [Armin Burgmeier]
+* Remove a weak reference on the watched window [Armin Burgmeier]
+* Rework the build environment:
+  - use a recent syntax for the configure.ac
+  - use AS_COMPILER_FLAGS to ensure portability
+  - use Shave to clean up the build output
+* Allow compiling out the Unix Domain Socket backend (bacon)
+* Use the D-Bus backend by default
+* Use GTK-Doc >= 1.11 to generate a proper Index
+* Use X11-specific API only if we have support for it
+
+Changes for Unique 1.0.4
+========================
+* Plug a leak in UniqueMessageData [Cosimo Cecchi]
+* Fix raw getter for UniqueMessageData
+* Make libunique behave correctly on OpenBSD [Landry Breuil]
+
+Changes for Unique 1.0.2
+========================
+* Various compilation warnings fixed
+* Add raw data getter for UniqueMessageData
+* Add filename accessor pair for UniqueMessageData
+* Fix linking with --as-needed
+* Support libtool 2.2
+* Do not export private functions symbols
+
+Changes for Unique 1.0.0
+========================
+* First stable release
+* API is frozen
+* D-Bus and socket backends

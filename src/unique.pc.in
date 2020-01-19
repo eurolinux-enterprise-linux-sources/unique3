@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: Unique
+Description: Create single instance applications
+Version: @VERSION@
+Requires: gtk+-3.0
+Recommends: dbus-glib-1
+Libs: -L${libdir} -lunique-@UNIQUE_API_VERSION@
+Cflags: -I${includedir}/unique-@UNIQUE_API_VERSION@

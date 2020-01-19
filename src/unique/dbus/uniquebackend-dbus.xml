@@ -1,0 +1,10 @@
+<node name="/">
+  <interface name="org.gtk.UniqueApp">
+    <method name="SendMessage">
+      <arg name="command" type="s" direction="in"/>
+      <arg name="message" type="(suuus)" direction="in"/>
+      <arg name="time" type="u" direction="in"/>
+      <arg name="response" type="s" direction="out"/>
+    </method>
+  </interface>
+</node>
